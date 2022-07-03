@@ -2,7 +2,7 @@
 Download mac system without graphic interface
 
 
-![tweet](https://g.top4top.io/p_2375saai61.jpg)
+<img src="https://g.top4top.io/p_2375saai61.jpg" width="300" height="300">
 
 
 # Installation
