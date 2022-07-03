@@ -2,9 +2,12 @@
 Download mac system without graphic interface
 
 
+![tweet](https://g.top4top.io/p_2375saai61.jpg)
+
+
 # Installation
 ```bash
-$ git https://github.com/0xfff0800/install-mac.git
+$ git clone https://github.com/0xfff0800/install-mac.git
 $ cd install-mac
 $ sed -i 's/\r//g' install.sh
 ```
