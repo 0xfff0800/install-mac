@@ -11,5 +11,5 @@ $ sed -i 's/\r//g' bash.sh
 
 # Usage
 ```bash
-bash bash.sh
+bash install.sh
 ```
