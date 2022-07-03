@@ -6,11 +6,6 @@ magenta=`tput setaf 5`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
 
-read -p 'install / run ?' inp
-
-# Check the username and password are valid or not
-if (( $inp == "install")
-then
 echo "${magenta}-----------------------------------------------------------------------------"
 echo "${yellow}[+] install docker"
 echo "${magenta}-----------------------------------------------------------------------------"
@@ -25,9 +20,3 @@ echo "${magenta}----------------------------------------------------------------
 echo "${green}install shell Mac OS"
 echo "${magenta}-----------------------------------------------------------------------------"
 sudo docker run -it --device /dev/kvm -p5910:5900 -p 50922:10022 -v /tmp/.X11-unix:/tmp/.X11-unix -e "DISPLAY=${DISPLAY:-:0.0}" -e GENERATE_UNIQUE=true -e TERMS_OF_USE=i_agree -e EXTRA='-vnc :0' sickcodes/docker-osx:auto
-
-else
-    echo -e "sudo docker run -it --device /dev/kvm -p5910:5900 -p 50922:10022 -v /tmp/.X11-unix:/tmp/.X11-unix -e "DISPLAY=${DISPLAY:-:0.0}" -e GENERATE_UNIQUE=true -e TERMS_OF_USE=i_agree -e EXTRA='-vnc :0' sickcodes/docker-osx:auto"
-fi
-
-
