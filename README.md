@@ -11,5 +11,5 @@ $ sed -i 's/\r//g' bash.sh
 
 # Usage
 ```bash
-./bash.sh
+bash bash.sh
 ```
