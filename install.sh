@@ -1,6 +1,12 @@
-sed -i 's/\r//g' script.sh
-echo "----------------------------------------------------------------------------- "
-echo "install docker"
+black=`tput setaf 0`
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+magenta=`tput setaf 5`
+cyan=`tput setaf 6`
+reset=`tput sgr0`
+echo "\n${yellow}[+]-----------------------------------------------------------------------------${reset}\n"
+echo "\n${yellow}install docker${reset}\n"
 echo "---------------------------------------------------------------------------------"
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
