@@ -13,4 +13,3 @@ echo "--------------------------------------------------------------------------
 echo "install shell Mac OS"
 echo "---------------------------------------------------------------------------------"
 sudo docker run -it --device /dev/kvm -p5910:5900 -p 50922:10022 -v /tmp/.X11-unix:/tmp/.X11-unix -e "DISPLAY=${DISPLAY:-:0.0}" -e GENERATE_UNIQUE=true -e TERMS_OF_USE=i_agree -e EXTRA='-vnc :0' sickcodes/docker-osx:auto
-
