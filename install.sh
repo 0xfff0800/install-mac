@@ -5,9 +5,9 @@ yellow=`tput setaf 3`
 magenta=`tput setaf 5`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
-echo "-----------------------------------------------------------------------------${reset}\n"
-echo "install docker${cyan}\n"
-echo "---------------------------------------------------------------------------------${reset}\n"
+echo "\n${magenta}-----------------------------------------------------------------------------"
+echo "\n${yellow}[+] install docker"
+echo "\n${magenta}---------------------------------------------------------------------------------"
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
@@ -15,7 +15,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debi
 sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce
-echo "-----------------------------------------------------------------------------${reset}\n"
-echo "install shell Mac OS${green}\n"
-echo "---------------------------------------------------------------------------------${reset}\n"
+echo "\n${magenta}-----------------------------------------------------------------------------"
+echo "\n${green}install shell Mac OS"
+echo "\n${magenta}---------------------------------------------------------------------------------"
 sudo docker run -it --device /dev/kvm -p5910:5900 -p 50922:10022 -v /tmp/.X11-unix:/tmp/.X11-unix -e "DISPLAY=${DISPLAY:-:0.0}" -e GENERATE_UNIQUE=true -e TERMS_OF_USE=i_agree -e EXTRA='-vnc :0' sickcodes/docker-osx:auto
